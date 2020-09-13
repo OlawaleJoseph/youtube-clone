@@ -1,0 +1,52 @@
+.header {
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.header__logo {
+  height: 25px;
+  margin-left: 17px;
+}
+
+.header__search {
+  width: 40%;
+  border: 1px solid #ccc;
+}
+
+.header__input {
+  border: none;
+}
+
+.header__input:focus {
+  outline: none;
+}
+
+.header__input::placeholder {
+  padding-left: 10px;
+}
+
+.header__search_icon {
+  color: gray;
+  background-color: #fafafa;
+  width: 50px !important;
+  border-left: 1px solid #ccc;
+}
+
+.header__icon {
+  margin-right: 10px;
+  color: #777;
+}
+
+@media (max-width: 610px) {
+  .header__search {
+    width: fit-content;
+  }
+
+  .header__input {
+    display: none;
+  }
+}
