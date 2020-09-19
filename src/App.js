@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/sideBar/Sidebar';
 import Main from './components/Main'
 
 function App() {
+  const [showSideNav, setShowSideNav] = useState(false);
+
+
   return (
     <div className="app">
-      <Header />
+      <Header showSideNav={showSideNav} setShowSideNav={setShowSideNav}/>
       <div className='app__page flex'>
-        <Sidebar />
+        <Sidebar show={showSideNav} />
         <Main />
       </div>
     </div>

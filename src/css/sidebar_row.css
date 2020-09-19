@@ -32,4 +32,13 @@
   font-weight: bold;
 }
 
+@media (min-width: 768px){
+  .no-display {
+    flex-direction: column;
+  }
 
+  .no-display > .sideBarRow__title {
+    font-size: 0.7rem;
+    margin-left: 0;
+  }
+}

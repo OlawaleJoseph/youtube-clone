@@ -1,5 +1,7 @@
 .sidebar {
   width: 240px;
+  margin-left: -240px;
+  transition: all 0.4s ease-in-out;
 }
 
 .sidebar > hr {
@@ -18,4 +20,18 @@
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.sidebar-active {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    margin-left: 0;
+  }
+
+  .mini-sidebar {
+    width: 80px;
+  }
 }
