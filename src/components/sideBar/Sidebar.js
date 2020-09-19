@@ -22,7 +22,7 @@ import '../../css/sidebar.css';
 function Sidebar({ show }) {
   
   return (
-    <div className={`sidebar ${show && 'sidebar-active'} ${!show && 'mini-sidebar'}`}>
+    <div className={`sidebar ${!show && 'sidebar-active'} ${!show && 'mini-sidebar'}`}>
       <SideBarRow Icon={HomeIcon} title="Home" show={show} selected />
       <SideBarRow Icon={WhatShotIcon} show={show} title="Trending"  />
       <SideBarRow Icon={SubscriptionsIcon} show={show} title="Subscriptions"  />
