@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ReactPlayer from 'react-player/lazy';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Avatar} from '@material-ui/core';
