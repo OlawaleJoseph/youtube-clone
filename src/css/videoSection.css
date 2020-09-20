@@ -1,0 +1,14 @@
+.videoSection {
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.videoSection__border {
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+.videoSection__title {
+  font-size: 21px;
+  font-family: Roboto;
+  font-weight: 500;
+}
